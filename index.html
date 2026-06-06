@@ -2,8 +2,8 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ente Metal Plastik | Endüstriyel İmalat ve Kalıp Teknolojileri</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-select=no">
+    <title>Ente Metal Plastik | Endüstriyel İmalat Teknolojileri</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,11 +15,11 @@
 
     <div class="whatsapp-container">
         <div class="whatsapp-popup" id="waPopup">
-            <p>Merhaba! Üretim ve kalıp talepleriniz için hızlıca teklif alabilirsiniz. ⚡</p>
+            <p>Merhaba! Üretim talepleriniz için hızlıca teklif alabilirsiniz. ⚡</p>
         </div>
-        <a href="https://wa.me/905320000000?text=Merhaba,%20Ente%20Metal%20Plastik%20web%20sitenizden%20ulaşıyorum.%20Üretim%20teklifi%20almak%20istiyorum." class="whatsapp-sticky" target="_blank">
+        <a href="https://wa.me/905320000000" class="whatsapp-sticky" target="_blank">
             <i class="fab fa-whatsapp"></i>
-            <span>Bize Teklif Gönderin</span>
+            <span>Bize Yazın</span>
         </a>
     </div>
 
@@ -27,10 +27,10 @@
         <div class="container flex-nav">
             <div class="logo-wrapper cms-editable" id="nav-logo-zone">
                 <div class="cyber-logo-icon">
-                    <svg viewBox="0 0 100 100" width="55" height="55">
-                        <circle cx="50" cy="50" r="46" fill="none" stroke="rgba(0, 242, 254, 0.15)" stroke-width="2"/>
+                    <svg viewBox="0 0 100 100" width="45" height="45">
+                        <circle cx="50" cy="50" r="46" fill="none" stroke="rgba(0, 242, 254, 0.2)" stroke-width="2"/>
                         <path d="M22,78 L22,22 L50,54 L78,22 L78,78" stroke="#ffffff" stroke-width="9" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
-                        <path d="M50,12 C78,12 90,28 90,50 C90,72 78,88 50,88" stroke="#00f2fe" stroke-width="7.5" fill="none" stroke-linecap="round"/>
+                        <path d="M50,12 C78,12 90,28 90,50 C90,72 78,88 50,88" stroke="#00f2fe" stroke-width="8" fill="none" stroke-linecap="round"/>
                         <line x1="22" y1="50" x2="68" y2="50" stroke="#00f2fe" stroke-width="6" stroke-linecap="round" />
                     </svg>
                 </div>
@@ -38,15 +38,20 @@
                     <h2>ENTE <span>METAL PLASTİK</span></h2>
                 </div>
             </div>
-            <nav class="flex-menu-nav">
+            
+            <button class="menu-toggle" id="menuToggle" aria-label="Menüyü Aç">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="flex-menu-nav" id="navMenu">
                 <ul class="nav-links">
-                    <li><a href="#anasayfa">Ana Sayfa</a></li>
-                    <li><a href="#kurumsal">Kurumsal</a></li>
-                    <li><a href="#urunler">Ürün Grupları</a></li>
-                    <li><a href="#parkur">Makine Parkuru</a></li>
-                    <li><a href="#galeri">Galeri</a></li>
-                    <li><a href="#sss">S.S.S.</a></li>
-                    <li><a href="#iletisim">İletişim</a></li>
+                    <li><a href="#anasayfa" onclick="toggleMenu()">Ana Sayfa</a></li>
+                    <li><a href="#kurumsal" onclick="toggleMenu()">Kurumsal</a></li>
+                    <li><a href="#urunler" onclick="toggleMenu()">Ürünler</a></li>
+                    <li><a href="#parkur" onclick="toggleMenu()">Parkur</a></li>
+                    <li><a href="#galeri" onclick="toggleMenu()">Galeri</a></li>
+                    <li><a href="#sss" onclick="toggleMenu()">S.S.S.</a></li>
+                    <li><a href="#iletisim" onclick="toggleMenu()">İletişim</a></li>
                 </ul>
                 <div class="lang-switcher">
                     <button class="lang-btn active" onclick="switchLanguage('tr')">TR</button>
@@ -57,49 +62,46 @@
         </div>
     </header>
 
-    <section id="anasayfa" class="hero-section cms-editable" style="background-image: linear-gradient(to bottom, rgba(10, 13, 16, 0.88), rgba(10, 13, 16, 0.98)), url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1920&q=80');">
+    <section id="anasayfa" class="hero-section cms-editable" style="background-image: linear-gradient(to bottom, rgba(10, 13, 16, 0.85), rgba(10, 13, 16, 0.98)), url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1920&q=80');">
         <div class="container text-center-hero">
             
-            <div class="hero-center-logo cms-editable" id="hero-logo-zone" data-aos="zoom-in" data-aos-duration="1000">
-                <svg viewBox="0 0 100 100" width="100" height="100">
-                    <circle cx="50" cy="50" r="46" fill="none" stroke="rgba(0, 242, 254, 0.25)" stroke-width="2.5"/>
+            <div class="hero-center-logo cms-editable" id="hero-logo-zone" data-aos="zoom-in" data-aos-duration="1200">
+                <svg viewBox="0 0 100 100" width="85" height="85">
+                    <circle cx="50" cy="50" r="46" fill="none" stroke="rgba(0, 242, 254, 0.3)" stroke-width="2"/>
                     <path d="M22,78 L22,22 L50,54 L78,22 L78,78" stroke="#ffffff" stroke-width="9" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
-                    <path d="M50,12 C78,12 90,28 90,50 C90,72 78,88 50,88" stroke="#00f2fe" stroke-width="7.5" fill="none" stroke-linecap="round"/>
+                    <path d="M50,12 C78,12 90,28 90,50 C90,72 78,88 50,88" stroke="#00f2fe" stroke-width="8" fill="none" stroke-linecap="round"/>
                     <line x1="22" y1="50" x2="68" y2="50" stroke="#00f2fe" stroke-width="6" stroke-linecap="round" />
                 </svg>
             </div>
 
             <div class="hero-content" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
-                <span class="cyber-badge"><i class="fas fa-microchip"></i> <span class="lang-tr">ENDÜSTRİ 4.0 ÜRETİM ALTYAPISI</span><span class="lang-en" style="display:none;">INDUSTRY 4.0 PRODUCTION INFRASTRUCTURE</span></span>
-                
+                <span class="cyber-badge"><i class="fas fa-microchip"></i> <span class="lang-tr">ENDÜSTRİ 4.0 ÜRETİM ALTYAPISI</span><span class="lang-en" style="display:none;">INDUSTRY 4.0 INFRASTRUCTURE</span></span>
                 <h1 class="cms-editable" id="hero-title">
                     <span class="lang-tr">Kalıp ve Enjeksiyonda <br><span class="gradient-text">20 Yıllık Kusursuz İşçilik</span></span>
-                    <span class="lang-en" style="display:none;">20 Years of Flawless Craftsmanship <br><span class="gradient-text">in Mold and Injection</span></span>
+                    <span class="lang-en" style="display:none;">20 Years of Flawless <br><span class="gradient-text">Mold & Injection Work</span></span>
                 </h1>
-                
                 <p class="cms-editable" id="hero-desc">
-                    <span class="lang-tr">Sanayinin kalbindeki yüksek donanımlı atölyemizde; milimetrik hassasiyete sahip kalıp çözümleri, yüksek basınçlı metal enjeksiyon ve mukavemetli plastik parça imalatı sunuyoruz.</span>
-                    <span class="lang-en" style="display:none;">In our well-equipped workshop in the heart of the industry, we offer high-precision mold solutions, high-pressure metal injection, and durable plastic parts manufacturing.</span>
+                    <span class="lang-tr">Muğla'dan İstanbul'a uzanan geniş hizmet ağımızla; hassas kalıp çözümleri, yüksek basınçlı metal enjeksiyon ve mukavemetli plastik parça imalatı sunuyoruz.</span>
+                    <span class="lang-en" style="display:none;">We offer high-precision mold solutions, die casting, and industrial plastic injection molding across our global supply lines.</span>
                 </p>
-                
                 <div class="hero-buttons">
-                    <a href="#iletisim" class="btn-primary"><span class="lang-tr">Hızlı Teklif Alın</span><span class="lang-en" style="display:none;">Get a Quick Quote</span></a>
-                    <a href="https://wa.me/905320000000" target="_blank" class="btn-secondary"><i class="fab fa-whatsapp"></i> <span class="lang-tr">WhatsApp İletişim</span><span class="lang-en" style="display:none;">WhatsApp Contact</span></a>
+                    <a href="#iletisim" class="btn-primary"><span class="lang-tr">Hızlı Teklif Alın</span><span class="lang-en" style="display:none;">Get Free Quote</span></a>
+                    <a href="#iletisim" class="btn-secondary"><span class="lang-tr">Bize Ulaşın</span><span class="lang-en" style="display:none;">Contact Us</span></a>
                 </div>
             </div>
 
-            <div class="hero-features-grid" data-aos="fade-up" data-aos-delay="400">
+            <div class="hero-features-grid" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                 <div class="feat-mini-card">
                     <i class="fas fa-drafting-compass"></i>
-                    <h4><span class="lang-tr">Hassas Kalıp Tasarımı</span><span class="lang-en" style="display:none;">Precision Mold Design</span></h4>
+                    <h4><span class="lang-tr">Kalıp Tasarımı</span><span class="lang-en" style="display:none;">Mold Design</span></h4>
                 </div>
                 <div class="feat-mini-card">
                     <i class="fas fa-fire-alt"></i>
-                    <h4><span class="lang-tr">Zamak & Metal Enjeksiyon</span><span class="lang-en" style="display:none;">Zamak & Metal Injection</span></h4>
+                    <h4><span class="lang-tr">Metal Enjeksiyon</span><span class="lang-en" style="display:none;">Die Casting</span></h4>
                 </div>
                 <div class="feat-mini-card">
                     <i class="fas fa-charging-station"></i>
-                    <h4><span class="lang-tr">Endüstriyel Plastik Baskı</span><span class="lang-en" style="display:none;">Industrial Plastic Molding</span></h4>
+                    <h4><span class="lang-tr">Plastik Baskı</span><span class="lang-en" style="display:none;">Plastic Injection</span></h4>
                 </div>
             </div>
         </div>
@@ -107,29 +109,23 @@
 
     <section id="kurumsal" class="section-padding">
         <div class="container flex-about">
-            <div class="about-text" data-aos="fade-right" data-aos-duration="1000">
+            <div class="about-text" data-aos="fade-right" data-aos-duration="1200">
                 <span class="sub-title">// <span class="lang-tr">BİZ KİMİZ?</span><span class="lang-en" style="display:none;">ABOUT US</span></span>
                 <h2 class="cms-editable" id="about-title">
-                    <span class="lang-tr">Tezgahın Başından Gelen <br>Ustalık ve Esnaf Hukuku</span>
-                    <span class="lang-en" style="display:none;">Mastery and Trust <br>Straight from the Machine</span>
+                    <span class="lang-tr">Tezgahın Başından Gelen <br>Ustalık ve Güven Hukuku</span>
+                    <span class="lang-en" style="display:none;">Engineering & Mastery <br>From the Shop Floor</span>
                 </h2>
                 <div class="cms-editable" id="about-paragraphs">
-                    <p class="highlight-text">
-                        <span class="lang-tr">Bizler hantal, süreçleri yavaş ilerleyen bürokratik fabrikalardan değiliz. Her siparişi milim milim takip eden, işinin bizzat başında duran çekirdekten yetişme uzman bir kadroyuz.</span>
-                        <span class="lang-en" style="display:none;">We are not a slow, bureaucratic factory. We are an expert team raised from the ground up, personally tracking every single production order with millimeter precision.</span>
-                    </p>
-                    <p>
-                        <span class="lang-tr">Yirmi yılı aşkın sanayi tecrübemiz sayesinde otomotiv yan sanayisinden beyaz eşya komponentlerine kadar geniş bir yelpazede hizmet sunuyoruz. Kalıp imalatından seri üretime kadar tüm süreçleri kendi bünyemizde çözerek sıfır hata toleransı ve şeffaf fiyatlandırma politikası uyguluyoruz.</span>
-                        <span class="lang-en" style="display:none;">With over twenty years of industrial experience, we serve a wide range of fields from the automotive sub-industry to home appliance components. By managing all stages within our own workshop, we provide a zero-error policy and fair prices.</span>
-                    </p>
+                    <p class="highlight-text">Bizler hantal süreçleri yavaş ilerleyen bürokratik yapılardan değiliz. İşinin başında duran çekirdekten yetişme uzman bir kadroyuz.</p>
+                    <p>Kalıp imalatından seri üretime kadar tüm aşamaları kendi bünyemizde çözerek sıfır hata toleransı uyguluyoruz.</p>
                 </div>
             </div>
-            <div class="about-img" data-aos="fade-left" data-aos-duration="1000">
+            <div class="about-img" data-aos="fade-left" data-aos-duration="1200">
                 <div class="tech-box">
                     <span class="corner-tl"></span><span class="corner-tr"></span>
                     <span class="corner-bl"></span><span class="corner-br"></span>
                     <div class="inner-img">
-                        <img class="cms-editable" id="about-image" src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80" alt="Ente Metal Üretim Alanı">
+                        <img class="cms-editable" id="about-image" src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80" alt="Üretim Alanı">
                     </div>
                 </div>
             </div>
@@ -138,65 +134,61 @@
 
     <section id="sayaclar" class="stats-section">
         <div class="container stats-grid">
-            <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+            <div class="stat-card" data-aos="zoom-in" data-aos-duration="1000">
                 <i class="fas fa-user-check"></i>
                 <h3 class="stat-number cms-editable" id="stat-1">350+</h3>
-                <p class="cms-editable" id="stat-1-title"><span class="lang-tr">Aktif Partner & İşletme</span><span class="lang-en" style="display:none;">Active Partners & Companies</span></p>
+                <p class="cms-editable" id="stat-1-title">Aktif Ortaklık</p>
             </div>
-            <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="stat-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
                 <i class="fas fa-business-time"></i>
                 <h3 class="stat-number cms-editable" id="stat-2">20+ Yıl</h3>
-                <p class="cms-editable" id="stat-2-title"><span class="lang-tr">Sektörel Deneyim & Ustalık</span><span class="lang-en" style="display:none;">Years of Industry Experience</span></p>
+                <p class="cms-editable" id="stat-2-title">Sektörel Tecrübe</p>
             </div>
-            <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+            <div class="stat-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
                 <i class="fas fa-star"></i>
                 <h3 class="stat-number cms-editable" id="stat-3">%100</h3>
-                <p class="cms-editable" id="stat-3-title"><span class="lang-tr">Zamanında Teslimat Oranı</span><span class="lang-en" style="display:none;">On-Time Delivery Rate</span></p>
+                <p class="cms-editable" id="stat-3-title">Zamanında Teslim</p>
             </div>
         </div>
     </section>
 
     <section id="urunler" class="section-padding bg-darker">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="sub-title">// <span class="lang-tr">ÜRETİM PORTFOLYOMUZ</span><span class="lang-en" style="display:none;">PRODUCTION PORTFOLIO</span></span>
-                <h2><span class="lang-tr">Neler Üretiyoruz?</span><span class="lang-en" style="display:none;">What We Manufacture</span></h2>
-                <p><span class="lang-tr">Kendi kalıphanemizde şekillendirdiğimiz, yüksek mukavemet ve hassasiyete sahip endüstriyel çözümler.</span><span class="lang-en" style="display:none;">High-strength and high-precision industrial solutions shaped in our own toolroom.</span></p>
+            <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+                <span class="sub-title">// PORTFOLYOMUZ</span>
+                <h2>Neler Üretiyoruz?</h2>
             </div>
             
             <div class="products-grid cms-repeatable" id="urun-listesi">
-                <div class="product-card" data-aos="fade-up">
+                <div class="product-card" data-aos="fade-right" data-aos-duration="1200">
                     <div class="product-img-wrapper">
-                        <img class="cms-editable product-actual-img" src="https://images.unsplash.com/photo-1534224039826-c7a0dea0e66a?auto=format&fit=crop&w=600&q=80" alt="Metal Enjeksiyon">
+                        <img class="cms-editable product-actual-img" src="https://images.unsplash.com/photo-1534224039826-c7a0dea0e66a?auto=format&fit=crop&w=600&q=80" alt="Metal">
                     </div>
                     <div class="product-info">
-                        <h3 class="cms-editable"><span class="lang-tr">Alüminyum & Zamak Enjeksiyon</span><span class="lang-en" style="display:none;">Aluminum & Zamak Injection</span></h3>
-                        <p class="cms-editable"><span class="lang-tr">Kalıbı özenle hazırlanmış, yüksek basınçlı pres hatlarımızda basılan sıvı metal komponentler.</span><span class="lang-en" style="display:none;">Liquid metal components molded under high pressure with meticulously optimized tooling.</span></p>
-                        <a href="#iletisim" class="card-link"><span class="lang-tr">Teknik Detay & Teklif</span><span class="lang-en" style="display:none;">Details & Quote</span> <i class="fas fa-arrow-right"></i></a>
+                        <h3 class="cms-editable">Alüminyum & Zamak Enjeksiyon</h3>
+                        <p class="cms-editable">Yüksek basınçlı otomasyon pres hatlarımızda basılan kusursuz metal komponentler.</p>
                     </div>
                 </div>
 
-                <div class="product-card" data-aos="fade-up" data-aos-delay="150">
+                <div class="product-card" data-aos="fade-left" data-aos-duration="1200">
                     <div class="product-img-wrapper">
-                        <img class="cms-editable product-actual-img" src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Plastik Enjeksiyon">
+                        <img class="cms-editable product-actual-img" src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Plastik">
                     </div>
                     <div class="product-info">
-                        <h3 class="cms-editable"><span class="lang-tr">Endüstriyel Plastik Parça Baskısı</span><span class="lang-en" style="display:none;">Industrial Plastic Injection</span></h3>
-                        <p class="cms-editable"><span class="lang-tr">Yüksek mühendislik standartlarına uygun polimerler kullanılarak üretilen dayanıklı plastik parçalar.</span><span class="lang-en" style="display:none;">Highly durable parts injected using technical engineering polymers matching strict industry standards.</span></p>
-                        <a href="#iletisim" class="card-link"><span class="lang-tr">Teknik Detay & Teklif</span><span class="lang-en" style="display:none;">Details & Quote</span> <i class="fas fa-arrow-right"></i></a>
+                        <h3 class="cms-editable">Endüstriyel Plastik Parça Baskısı</h3>
+                        <p class="cms-editable">Mühendislik standartlarına uygun polimerlerle üretilen yüksek mukavemetli parçalar.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="materials-showcase" data-aos="fade-up">
-                <h4 class="cms-editable" id="mat-title"><span class="lang-tr">İşlediğimiz Endüstriyel Hammaddeler</span><span class="lang-en" style="display:none;">Industrial Raw Materials We Process</span></h4>
+            <div class="materials-showcase" data-aos="fade-zoom-in" data-aos-duration="1200">
+                <h4 class="cms-editable" id="mat-title">İşlediğimiz Endüstriyel Hammaddeler</h4>
                 <div class="material-badges cms-repeatable" id="hammadde-listesi">
-                    <span class="badge">Alüminyum Enjeksiyon</span>
+                    <span class="badge">Alüminyum</span>
                     <span class="badge">Zamak 3 & Zamak 5</span>
                     <span class="badge">PP (Polipropilen)</span>
                     <span class="badge">ABS</span>
                     <span class="badge">PA6 & PA66 (Poliamid)</span>
-                    <span class="badge">PC (Polikarbonat)</span>
                 </div>
             </div>
         </div>
@@ -204,27 +196,26 @@
 
     <section id="parkur" class="section-padding">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="sub-title">// <span class="lang-tr">ALTYAPI VE GÜÇ</span><span class="lang-en" style="display:none;">MACHINERY CAPABILITY</span></span>
-                <h2><span class="lang-tr">Gelişmiş Makine Parkurumuz</span><span class="lang-en" style="display:none;">Our Production Line</span></h2>
-                <p><span class="lang-tr">Hassasiyetimizin ve yüksek üretim hızımızın arkasındaki teknolojik parkurumuz.</span><span class="lang-en" style="display:none;">The reliable and modern machinery setup ensuring our pinpoint precision and rapid lead times.</span></p>
+            <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+                <span class="sub-title">// TEKNOLOJİK PARKUR</span>
+                <h2>Üretim Gücümüz</h2>
             </div>
             
             <div class="parkur-grid cms-repeatable" id="makine-listesi">
-                <div class="parkur-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="parkur-card" data-aos="flip-left" data-aos-duration="1200">
                     <i class="fas fa-compress-alt"></i>
-                    <h3 class="cms-editable"><span class="lang-tr">Hassas Plastik Enjeksiyon Hatları</span><span class="lang-en" style="display:none;">Precision Plastic Injection Lines</span></h3>
-                    <p class="cms-editable"><span class="lang-tr">Farklı gramajlardaki baskı taleplerine milisaniyeler içinde kusursuz yanıt veren otomasyonlu presler.</span><span class="lang-en" style="display:none;">Automated presses providing immaculate efficiency for varying grammage demands down to the millisecond.</span></p>
+                    <h3 class="cms-editable">Plastik Enjeksiyon Presleri</h3>
+                    <p class="cms-editable">Farklı gramajlardaki taleplere milisaniyeler içinde kusursuz yanıt veren hatlar.</p>
                 </div>
-                <div class="parkur-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="parkur-card" data-aos="flip-left" data-aos-duration="1200" data-aos-delay="150">
                     <i class="fas fa-tools"></i>
-                    <h3 class="cms-editable"><span class="lang-tr">Yüksek Basınçlı Metal Enjeksiyon Presleri</span><span class="lang-en" style="display:none;">High-Pressure Die Casting Lines</span></h3>
-                    <p class="cms-editable"><span class="lang-tr">Zamak ve alüminyum parça imalatında gözeneksiz, pürüzsüz yüzey kalitesi sağlayan döküm hatları.</span><span class="lang-en" style="display:none;">Advanced hot and cold chamber cast lines securing non-porous, perfectly smooth surfaces.</span></p>
+                    <h3 class="cms-editable">Metal Enjeksiyon Presleri</h3>
+                    <p class="cms-editable">Zamak ve alüminyum imalatında gözeneksiz, pürüzsüz yüzey kalitesi sağlayan döküm presleri.</p>
                 </div>
-                <div class="parkur-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="parkur-card" data-aos="flip-left" data-aos-duration="1200" data-aos-delay="300">
                     <i class="fas fa-desktop"></i>
-                    <h3 class="cms-editable"><span class="lang-tr">CNC Dik İşlem Tezgahları</span><span class="lang-en" style="display:none;">CNC Vertical Machining Centers</span></h3>
-                    <p class="cms-editable"><span class="lang-tr">Kalıp üretim süreçlerini harici bir yere muhtaç kalmadan kendi bünyemizde mikron düzeyinde işleyen merkezimiz.</span><span class="lang-en" style="display:none;">Our internal tooling division milling heavy blocks to micron-level accuracy without outsourcing dependencies.</span></p>
+                    <h3 class="cms-editable">CNC Dik İşlem Merkezi</h3>
+                    <p class="cms-editable">Kalıp üretim süreçlerini harici bir yere muhtaç kalmadan mikron düzeyinde işleyen tezgahlar.</p>
                 </div>
             </div>
         </div>
@@ -232,30 +223,29 @@
 
     <section id="galeri" class="section-padding bg-darker">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="sub-title">// <span class="lang-tr">ATÖLYEDEN KESİTLER</span><span class="lang-en" style="display:none;">FROM THE WORKSHOP</span></span>
-                <h2><span class="lang-tr">Üretim ve Ürün Galerisi</span><span class="lang-en" style="display:none;">Production & Gallery</span></h2>
-                <p><span class="lang-tr">İmalat hatlarımızdan ve teslimatını gerçekleştirdiğimiz siparişlerden gerçek görüntüler.</span><span class="lang-en" style="display:none;">Authentic glances from our active injection shop and high-quality parts successfully dispatched.</span></p>
+            <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+                <span class="sub-title">// ATÖLYEDEN SEÇKİLER</span>
+                <h2>İmalat Klasörü</h2>
             </div>
 
             <div class="gallery-grid cms-repeatable" id="galeri-listesi">
-                <div class="gallery-card" data-aos="zoom-in">
+                <div class="gallery-card" data-aos="fade-zoom-in" data-aos-duration="1000">
                     <div class="gallery-item">
-                        <img class="cms-editable" src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=500&q=80" alt="Üretim Serisi">
+                        <img class="cms-editable" src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=500&q=80" alt="Galeri 1">
                         <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
                     </div>
                     <div class="gallery-info">
-                        <h4 class="cms-editable"><span class="lang-tr">Otomotiv Yedek Parça İmalatı</span><span class="lang-en" style="display:none;">Automotive Spare Parts Manufacturing</span></h4>
+                        <h4 class="cms-editable">Otomotiv Komponent Baskıları</h4>
                     </div>
                 </div>
 
-                <div class="gallery-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="gallery-card" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="150">
                     <div class="gallery-item">
-                        <img class="cms-editable" src="https://images.unsplash.com/photo-1565891741441-64926e441838?auto=format&fit=crop&w=500&q=80" alt="Plastik Kalıpları">
+                        <img class="cms-editable" src="https://images.unsplash.com/photo-1565891741441-64926e441838?auto=format&fit=crop&w=500&q=80" alt="Galeri 2">
                         <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
                     </div>
                     <div class="gallery-info">
-                        <h4 class="cms-editable"><span class="lang-tr">Endüstriyel Plastik Enjeksiyon Serisi</span><span class="lang-en" style="display:none;">Industrial Plastic Injection Group</span></h4>
+                        <h4 class="cms-editable">Hassas Beyaz Eşya Kalıpları</h4>
                     </div>
                 </div>
             </div>
@@ -264,23 +254,19 @@
 
     <section id="sss" class="section-padding">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="sub-title">// <span class="lang-tr">MERAK EDİLENLER</span><span class="lang-en" style="display:none;">F.A.Q.</span></span>
-                <h2><span class="lang-tr">Sıkça Sorulan Sorular</span><span class="lang-en" style="display:none;">Frequently Asked Questions</span></h2>
-                <p><span class="lang-tr">Kalıp, teslimat süreçleri ve imalat detayları hakkında en çok karşılaştığımız sorular.</span><span class="lang-en" style="display:none;">Most common answers regarding mold processing, validation stages, and batch timelines.</span></p>
+            <div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+                <span class="sub-title">// MERAK EDİLENLER</span>
+                <h2>Sıkça Sorulan Sorular</h2>
             </div>
 
             <div class="faq-container cms-repeatable" id="faq-listesi">
-                <div class="faq-item" data-aos="fade-up">
+                <div class="faq-item" data-aos="fade-up" data-aos-duration="1000">
                     <div class="faq-question">
-                        <h3 class="cms-editable"><span class="lang-tr">Kalıp imalatı ücretlendirmesi ve mülkiyeti kime aittir?</span><span class="lang-en" style="display:none;">Who owns the intellectual and physical mold rights?</span></h3>
+                        <h3 class="cms-editable">Kalıp mülkiyeti kime aittir?</h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p class="cms-editable">
-                            <span class="lang-tr">Kalıp imalat bedeli proje başında onaylanan bütçeye göre müşterimize fatura edilir. Üretimi tamamlanan bir kalıbın mülkiyeti ve fikri hakları tamamen müşterimize aittir.</span>
-                            <span class="lang-en" style="display:none;">The mold construction budget is invoiced as agreed during initiation. Once fully balanced, physical custody and intellectual rights transfer entirely to our client.</span>
-                        </p>
+                        <p class="cms-editable">Bedeli ödenen ve üretimi tamamlanan tüm kalıpların fiziki mülkiyeti ve fikri hakları tamamen müşterimize aittir.</p>
                     </div>
                 </div>
             </div>
@@ -289,38 +275,29 @@
 
     <section id="iletisim" class="section-padding bg-darker">
         <div class="container">
-            <div class="contact-grid-main-split" data-aos="fade-up">
+            <div class="contact-grid-main-split" data-aos="fade-up" data-aos-duration="1200">
                 
                 <div class="contact-form-panel">
-                    <h3><span class="lang-tr">Hızlı İmalat Talep Formu</span><span class="lang-en" style="display:none;">Rapid Manufacturing Form</span></h3>
+                    <h3>Hızlı İmalat Talep Formu</h3>
                     <form id="dynamic-form" class="cms-editable" action="https://formspree.io/f/X_KODUNUZ" method="POST">
-                        <div class="form-group">
-                            <input type="text" name="Ad Soyad / Firma" placeholder="Adınız Soyadınız / Firma Ünvanınız" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" name="Telefon" placeholder="Telefon Numaranız" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="Mesaj" placeholder="Projeniz, adetler ve malzeme beklentiniz hakkında kısa bilgi yazınız..." rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn-primary" style="width: 100%; border:none; cursor:pointer;"><span class="lang-tr">Talebi Gönder</span><span class="lang-en" style="display:none;">Submit Form</span></button>
+                        <div class="form-group"><input type="text" name="Firma" placeholder="Adınız / Firma Ünvanınız" required></div>
+                        <div class="form-group"><input type="tel" name="Telefon" placeholder="Telefon Numaranız" required></div>
+                        <div class="form-group"><textarea name="Mesaj" placeholder="Proje detayları ve parça adetleri..." rows="4" required></textarea></div>
+                        <button type="submit" class="btn-primary" style="width: 100%; border:none;">Talebi Gönder</button>
                     </form>
                 </div>
 
                 <div class="contact-info-panel-split">
-                    <h2><span class="lang-tr">Bizimle İletişime Geçin</span><span class="lang-en" style="display:none;">Get In Touch</span></h2>
-                    <p><span class="lang-tr">Atölyemize gelerek numune bırakabilir ya da teknik resimlerinizi fırlatabilirsiniz.</span><span class="lang-en" style="display:none;">Drop by our workshop for material sampling or securely transmit your technical CAD drawings.</span></p>
-                    
+                    <h2>İletişim Bilgileri</h2>
                     <div class="contact-lines-new">
                         <div class="line-item-new"><i class="fas fa-phone-alt"></i> <span class="cms-editable" id="c-p">+90 (532) 000 00 00</span></div>
                         <div class="line-item-new"><i class="fas fa-envelope"></i> <span class="cms-editable" id="c-e">info@entemetalplastik.com</span></div>
-                        <div class="line-item-new"><i class="fas fa-map-marker-alt"></i> <span class="cms-editable" id="c-a">Celaliye Mahallesi, İstanbul / Türkiye</span></div>
-                        <div class="line-item-new"><i class="fas fa-clock"></i> <span class="cms-editable" id="c-h">Pzt - Cmt: 08:30 - 19:00 | Pazar: Kapalı</span></div>
+                        <div class="line-item-new"><i class="fas fa-map-marker-alt"></i> <span class="cms-editable" id="c-a">Büyükçekmece, İstanbul / Türkiye</span></div>
                     </div>
                 </div>
 
                 <div class="contact-map-panel">
-                    <div class="map-container-box cms-editable" id="smart-address-map" data-address="Celaliye, Büyükçekmece, İstanbul">
+                    <div class="map-container-box cms-editable" id="smart-address-map" data-address="Büyükçekmece, İstanbul">
                         </div>
                 </div>
 
@@ -331,54 +308,71 @@
     <footer>
         <div class="container flex-footer">
             <div class="footer-logo cms-editable" id="footer-logo-zone">
-                <h3 style="font-family: var(--font-orbitron); font-size:16px;">ENTE <span style="color:var(--accent); font-size:12px; font-family:var(--font-poppins);">METAL PLASTİK</span></h3>
+                <h3>ENTE <span>METAL PLASTİK</span></h3>
             </div>
             <p>© 2026 Ente Metal Plastik. Tüm Hakları Saklıdır.</p>
-            <p>Global Endüstriyel Partner</p>
         </div>
     </footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init({ once: true });
+        AOS.init({ once: true, disable: 'mobile' == false });
 
-        // SSS Akordeon
+        // Akıllı Mobil Menü Tetikleyicisi
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+            const icon = menuToggle.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+
+        function toggleMenu() {
+            if(window.innerWidth <= 992) {
+                navMenu.classList.remove('open');
+                const icon = menuToggle.querySelector('i');
+                icon.classList.add('fa-bars');
+                icon.classList.remove('fa-times');
+            }
+        }
+
+        // Accordion SSS
         document.querySelectorAll('.faq-question').forEach(item => {
             item.addEventListener('click', () => {
-                const parent = item.parentElement;
-                parent.classList.toggle('active');
+                item.parentElement.classList.toggle('active');
             });
         });
 
-        // İnteraktif Çift Dil Geçiş Mekanizması
+        // Çift Dil Motoru
         function switchLanguage(lang) {
             document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
             if(lang === 'tr') {
                 document.querySelectorAll('.lang-tr').forEach(el => el.style.display = 'inline-block');
                 document.querySelectorAll('.lang-en').forEach(el => el.style.display = 'none');
-                event.target.classList.add('active');
             } else {
                 document.querySelectorAll('.lang-tr').forEach(el => el.style.display = 'none');
                 document.querySelectorAll('.lang-en').forEach(el => el.style.display = 'inline-block');
-                event.target.classList.add('active');
             }
+            event.target.classList.add('active');
         }
 
-        // 3 Saniye Sonra Fırlayan Akıllı WhatsApp Popup
+        // WhatsApp 3 Saniye Gecikmeli Balon
         window.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 const popup = document.getElementById('waPopup');
-                if(popup) { popup.classList.add('show-popup'); }
+                if(popup) popup.classList.add('show-popup');
             }, 3000);
         });
 
-        // DÜZ YAZIDAN CANLI HARİTA TÜRETEN AKILLI JS MOTORU
+        // Düz Yazı Harita Motoru
         window.addEventListener('DOMContentLoaded', () => {
             const mapBox = document.getElementById('smart-address-map');
             if(mapBox) {
                 const rawAddress = mapBox.getAttribute('data-address') || 'İstanbul';
                 const cleanAddress = encodeURIComponent(rawAddress.trim());
-                mapBox.innerHTML = `<iframe src="https://maps.google.com/maps?q=${cleanAddress}&t=&z=14&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0; filter: invert(90%) hue-rotate(180deg) grayscale(45%) opacity(0.88);" allowfullscreen="" loading="lazy"></iframe>`;
+                mapBox.innerHTML = `<iframe src="http://googleusercontent.com/maps.google.com/6{cleanAddress}&t=&z=14&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0; filter: invert(90%) hue-rotate(180deg) grayscale(45%) opacity(0.85);" allowfullscreen="" loading="lazy"></iframe>`;
             }
         });
     </script>
