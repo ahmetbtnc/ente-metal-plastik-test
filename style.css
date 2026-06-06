@@ -335,10 +335,128 @@ footer { padding: 40px 0; border-top: 1px solid rgba(255, 255, 255, 0.03); color
     .about-text h2, .section-header h2 { font-size: 34px; }
 }
 
+/* ==========================================================================
+   NİHAİ VE KUSURSUZ MOBİL / TABLET KORUMA KALKANI (VİDEO GÜNCELLEMESİ)
+   ========================================================================== */
+
+@media (max-width: 1100px) {
+    .contact-grid-main-split { 
+        grid-template-columns: 1fr; 
+        padding: 30px; 
+    }
+    .contact-map-panel { 
+        min-height: 300px; 
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero-content h1 { 
+        font-size: 42px; 
+    }
+    .flex-nav { 
+        flex-direction: column; 
+        gap: 15px; 
+    }
+    .flex-about { 
+        gap: 40px; 
+    }
+    .about-text h2, .section-header h2 { 
+        font-size: 32px; 
+    }
+}
+
+/* 📱 TAM MOBİL DÜZELTME ALANI (VİDEODAKİ HATALARI ÇÖZEN KISIM) */
 @media (max-width: 768px) {
-    .flex-menu-nav { flex-direction: column; gap: 20px; }
-    .nav-links { gap: 15px; flex-wrap: wrap; justify-content: center; }
-    .hero-content h1 { font-size: 34px; }
-    .hero-features-grid, .stats-grid, .products-grid, .parkur-grid, .gallery-grid { grid-template-columns: 1fr; }
-    .flex-footer { flex-direction: column; gap: 15px; text-align: center; }
+    
+    /* Navbar ve Logo Çakışma Çözümü */
+    .navbar {
+        padding: 15px 0;
+    }
+    .flex-nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+    /* Mobilde menü açıldığında logonun arkada kalıp çirkin durmasını engelliyoruz */
+    .logo-wrapper {
+        transform: scale(0.9);
+        margin-bottom: 5px;
+    }
+    .flex-menu-nav {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        background: rgba(18, 22, 27, 0.95);
+        padding: 15px;
+        border-radius: 6px;
+        border: 1px solid rgba(0, 242, 254, 0.1);
+    }
+    .nav-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    /* Hero Alanı Yazı Küçültme (Taşma Engeli) */
+    .hero-section {
+        padding-top: 180px;
+    }
+    .hero-content h1 {
+        font-size: 32px; /* Yazıların ekrandan taşmasını önler */
+        line-height: 1.3;
+    }
+    .hero-content p {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+
+    /* Hakkımızda Başlık Taşma Çözümü (0:05 saniyedeki hata için) */
+    .about-text h2 {
+        font-size: 28px;
+        line-height: 1.3;
+        word-wrap: break-word; /* Kelimenin ekrandan taşmasını engeller */
+    }
+    .flex-about {
+        flex-direction: column;
+    }
+    .tech-box {
+        height: 300px; /* Mobilde görsel kutusunu optimize ettik */
+    }
+
+    /* Ürün Kartları ve Kırık Resim Düzenlemesi */
+    .products-grid, .parkur-grid, .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    .product-img-wrapper {
+        height: 220px; /* Mobilde daha dengeli durması için */
+    }
+
+    /* Formun Üzerine Binen WhatsApp Butonunu Aşağı Çekme (0:28 saniyedeki hata için) */
+    .whatsapp-container {
+        bottom: 15px;
+        right: 15px;
+    }
+    .whatsapp-sticky {
+        padding: 12px 22px;
+        font-size: 14px;
+    }
+    .whatsapp-popup {
+        max-width: 220px;
+        font-size: 12px;
+    }
+    /* Kullanıcı harita ve form alanına geldiğinde butonun opasitesini hafif azaltıp dokunmayı kolaylaştırıyoruz */
+    .contact-grid-main-split:hover ~ .whatsapp-container {
+        opacity: 0.3;
+        transition: opacity 0.3s;
+    }
+
+    .flex-footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
 }
